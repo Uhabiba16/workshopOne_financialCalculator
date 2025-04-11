@@ -20,7 +20,13 @@ public class Main {
         System.out.println("input loan length: Years");
         int loanLength = scanner.nextInt();
 
-        double totalInterest=0;
+        int totalMonths =0;
+        totalMonths = loanLength * 12;
+        System.out.println(totalMonths);
+
+
+
+
 
 
 
