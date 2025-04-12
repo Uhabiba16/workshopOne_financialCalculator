@@ -10,14 +10,14 @@ public class Main {
         System.out.print("input principal:$ ");
         double principal = scanner.nextDouble();
 
-        System.out.print("input annual interest rate:% ");
+        System.out.print("input annual interest rate: ");
         double interestRate = scanner.nextDouble();
 
         System.out.print("input loan length in Years: ");
         int loanLength = scanner.nextInt();
 
         int totalMonths =0;
-        totalMonths = loanLength * 12;
+        totalMonths = (loanLength * 12);
         System.out.println("Number of monthly payments: "+ totalMonths);
 
         double annualInterest= 0;
@@ -25,13 +25,21 @@ public class Main {
         System.out.println("Total annual interest:$ "+ annualInterest);
 
         double monthlyInterest=0;
-        monthlyInterest= (principal+ annualInterest)/totalMonths;
+        monthlyInterest= ((principal+ annualInterest)/totalMonths);
 
         System.out.printf("Monthly payment:$%.2f", monthlyInterest);
 
 // -------------------------------------END OF MORTGAGE CALCULATOR--------------------------------------
 
+//        -----------CALCULATOR 2------------FIND THE FUTURE VALUE-----------------------
+        System.out.println("Input Deposit: $ ");
+        int deposit = scanner.nextInt();
 
+        System.out.println("Input interest:% ");
+        double interest= scanner.nextDouble();
+
+        System.out.println("Input years: ");
+        int days = scanner.nextInt();
 
     }
 }
