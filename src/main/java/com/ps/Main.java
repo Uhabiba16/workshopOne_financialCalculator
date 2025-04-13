@@ -43,17 +43,14 @@ public class Main {
 
         System.out.print("Input years: ");
         int years = scanner.nextInt();
-
         int days =0;
         days = (years * 365);
 
-        float futureValue=0;
-
-
-//        double futureValue=0;
-//        futureValue= (deposit* ((1+ interest/365)* (days)));
+        double futureValue=0;
+        futureValue= deposit * Math.pow((1+(rate/365)),days);
 
         System.out.printf("future value:$%.2f", futureValue);
+        System.out.printf(" interest earned:$%.2f ", (futureValue- deposit));
 
     }
 }
